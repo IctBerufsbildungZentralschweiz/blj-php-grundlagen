@@ -69,9 +69,9 @@ Beispiel:
   }
 }
 ```
- JSON wird insbesondere bei Webapplikationen häufig zum Transfer von Daten zwischen dem Client und dem Server genutzt; denn ein Browser und ein Webserver können "nur" Text austauschen. Das bedeutet, dass z.B. Daten, die auf dem Server in einem PHP-Array gespeichert sind, in JSON umgewandelt werden können, bevor sie über Internet an den Browser (oder an einen anderen Server) übertragen werden. 
+ JSON wird insbesondere bei Webapplikationen häufig zum Transfer von Daten zwischen dem Client und dem Server genutzt; denn ein Browser und ein Webserver können "nur" Text austauschen. Aber auch zwischen zwei Webservern wird mit JSON ein Austausch von Daten über das Internet möglich. Um  z.B. Daten, die in einem PHP-Array gespeichert sind an ein PHP-Skript zu schicken, das auf einem anderen Server läuft, muss das Array in einen JSON-codierten String umgewandelt werden (dieser Vorgang nennt sich "Serialisieren"). Dieser JSON-codierte String kann dann über Internet verschickt, respektive angefordert werden. Auf der Empfängerseite wird der JSON-codierte Strings schliesslich zurück in ein Array umgewandelt ("Deserialiseren"). 
 
-#### PHP-Array umwandeln in einen JSON-kodierten String
+#### PHP-Array umwandeln in einen JSON-codierten String 
 ```php
 json_encode($myArray)
 ```
