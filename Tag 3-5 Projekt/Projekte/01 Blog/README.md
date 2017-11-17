@@ -69,7 +69,9 @@ Beispiel:
   }
 }
 ```
- JSON wird insbesondere bei Webapplikationen häufig zum Transfer von Daten zwischen dem Client und dem Server genutzt; denn ein Browser und ein Webserver können "nur" Text austauschen. Aber auch zwischen zwei Webservern wird mit JSON ein Austausch von Daten über das Internet möglich. Um  z.B. Daten, die in einem PHP-Array gespeichert sind an ein PHP-Skript zu schicken, das auf einem anderen Server läuft, muss das Array in einen JSON-codierten String umgewandelt werden (dieser Vorgang nennt sich "Serialisieren"). Dieser JSON-codierte String kann dann über Internet verschickt, respektive angefordert werden. Auf der Empfängerseite wird der JSON-codierte Strings schliesslich zurück in ein Array umgewandelt ("Deserialiseren"). 
+ JSON wird insbesondere bei Webapplikationen häufig zum Transfer von Daten zwischen dem Client und dem Server genutzt; denn ein Browser und ein Webserver können "nur" Text austauschen. Aber auch zwischen zwei Webservern wird mit JSON ein Austausch von Daten über das Internet möglich. Um  z.B. Daten, die in einem PHP-Array gespeichert sind an ein PHP-Skript zu schicken, das auf einem anderen Server läuft, muss das Array in einen JSON-codierten String umgewandelt werden (dieser Vorgang nennt sich "Serialisieren"). Dieser JSON-codierte String kann dann über Internet verschickt, respektive angefordert werden. Auf der Empfängerseite wird der JSON-codierte Strings schliesslich zurück in ein Array umgewandelt ("Deserialiseren").
+
+ ![Szene 1](res/01.jpg) 
 
 #### PHP-Array umwandeln in einen JSON-codierten String 
 ```php
@@ -78,7 +80,7 @@ json_encode($myArray)
 #### Mit PHP Daten über eine JSON-Schnittstelle abholen
 ```php
 $jsonString = file_get_contents('http://192.168.51.10/api/blog/get_posts.php');
-json_decode($myArray)
+json_decode($jsonString)
 ```
 ### Passwort verschlüsseln  
 Siehe: [Hashing passwords with password_hash()](http://www.phptherightway.com/#password_hashing)
