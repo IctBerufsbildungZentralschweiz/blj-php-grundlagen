@@ -19,7 +19,7 @@ Achte darauf, dass du zuerst die Anforderungen mit der höchsten Priorität erf�
 | A006 | Als Blogger will ich Bilder aus dem Internet verlinken können, um meine Beiträge interessanter zu machen.                        |   2  | 
 | A007 | Als BLJ-Coach will ich, dass die Link-Liste aller BLJ-Blogs (siehe A004) zentral abgelegt und dynamisch erstellt wird.           |   2  |
 | A008 | Als Blog-Entwickler will ich, dass andere Entwickler alle Beiträge meines Blogs über eine JSON-Schnittstelle abrufen können.     |   2  |
-| A009 | Als Benutzer will ich auch die Blog-Beiträge aller anderen BLJ-Blogs sehen.                                                      |   2  |
+| A009 | Als Benutzer will ich auch die Blog-Beiträge aller anderen BLJ-Blogs sehen. Diese werden über die JSON-Schnittstelle abgeholt.   |   2  |
 | A010 | Als Blogger will ich mich einloggen, um Blog-Beiträge zu schreiben, damit niemand in meinem Namen bloggen kann.                  |   3  |
 | A011 | Als Blogger will ich, das mein Passwort verschlüsselt in der Datenbank abgelegt wird.                                            |   3  |
 | A012 | Als Blogger will ich mein Passwort ändern können.                                                                                |   3  |
