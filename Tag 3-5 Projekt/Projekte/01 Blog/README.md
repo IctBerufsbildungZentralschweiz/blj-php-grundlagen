@@ -1,5 +1,5 @@
 # Blog
-Dein Auftrag ist es, ein Blog zu erstellen. Der Betreiber des Blogs soll in einem durch einen Benutzernamen und durch ein Passwort geschützen Bereich seine Beiträge erfassen können. Die erfassten Beiträge sollen dann im öffentlichen Bereich der Webseite für alle zu lesen sein. Es wäre toll, wenn die Leser einen Beitrag kommentieren und bewerten könnten.
+Dein Auftrag ist es, ein Blog zu erstellen. Die Blog-Beiträge, die durch den Blogger erstellt werden, können von den Besuchern des Blogs gelesen werden. 
 
 ## Anforderungen 
 Die Anforderungen an den Blog, d.h. welche Funktionen der Blog für den Benutzer anbieten soll, sind nachfolgend aufgeführt. Diese Anforderungen sind priorisiert: 
