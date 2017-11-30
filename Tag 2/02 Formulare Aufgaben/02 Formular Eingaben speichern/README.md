@@ -1,10 +1,10 @@
 # Anmeldungen speichern
 
-Nutze als Basis für diese Aufgabe deine Lösung für das Anmelde-Formular für den Kundenevent aus der vorherigen Aufgabe. 
+Nutze als Basis für diese Aufgabe deine Lösung zum Anmelde-Formular für den Kundenevent aus der vorherigen Aufgabe. 
 
 ## Aufgabenstellung
 
-Erweitere dein PHP-Script, welches das Formular verarbeitet, sodass beim Absenden des Formulares nach erfolgreicher Validierung, d.h. wenn alle Eingaben OK sind, die vom Benutzer eingegeben Daten in einer Datei gespeichert werden.
+Erweitere dein PHP-Script, welches das Formular verarbeitet, sodass beim Absenden des Formulares nach erfolgreicher Validierung, d.h. wenn alle Eingaben OK sind, die vom Benutzer eingegeben Daten in eine Datei gespeichert werden.
 
 ### Lösungsschritte
 
