@@ -63,7 +63,7 @@ Schicke die Anmeldung ab, indem du den «Anmelden»-Button klickst.
 
  * Die Csv-Datei `Daten/anmeldunden.csv` wurde erstellt. 
  * Die Kopfzeile (Spaltennamen) in der Datei wurde korrekt erstellt. 
- * Die eingegebenen Daten wurden in der Datei auf der zweiten Zeile gespeichert.
+ * Die eingegebenen Daten aus dem Anmeldeformular wurden in der Datei auf der zweiten Zeile gespeichert.
  * Öffne die Csv-Datei mit Excel: alle Daten befinden sich in den richtigen Spalten. 
 
  **Testfall 2**
@@ -72,7 +72,7 @@ Schicke die Anmeldung ab, indem du den «Anmelden»-Button klickst.
 
 Gehe zurück zum Formular und gib die gleichen Daten ein wie bei Testfall 1, ausser bei der Bemerkung, wo du folgenden Text eingibst (`;` statt `,`). 
 
-Bemerkung: ```Hallo; ich freue mich! Gruss; Peter```
+* Bemerkung: ```Hallo; ich freue mich! Gruss; Peter```
 
 Schicke die Anmeldung ab, indem du den «Anmelden»-Button klickst.
 
@@ -88,7 +88,7 @@ Schicke die Anmeldung ab, indem du den «Anmelden»-Button klickst.
 
 Gehe zurück zum Formular und gib die gleichen Daten ein wie bei Testfall 1, ausser bei der Bemerkung, wo du folgenden Text eingibst (mit Zeilenumbrüchen): 
 
-Bemerkung: 
+* Bemerkung: 
 ```
 Hallo 
    
