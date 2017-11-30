@@ -36,3 +36,11 @@ fieldset {
     margin-top: 1em;
     margin-bottom: 2em;
 }
+
+.error-box {
+    color: red;
+    background-color: rgb(250, 220, 220);
+    border: 1px solid red;
+    border-radius: 10px;
+    padding-top: 10px;
+}

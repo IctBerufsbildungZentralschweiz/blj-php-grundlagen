@@ -11,7 +11,7 @@
 
         <h1 class="form-title">Anmeldung für Kundenevent</h1>
 
-        <p>Füllen Sie das folgende Formular aus um sich für unseren Kundenevent 2016 anzumelden.</p>
+        <p>Füllen Sie das Formular aus um sich für unseren Kundenevent im kommenden Frühling anzumelden.</p>
 
         <form action="index.php" method="post">
 
@@ -52,17 +52,6 @@
                         <label for="hotel2">
                             <input type="radio" name="hotel" id="hotel2" value="Steinberger Grandhotel Belvédère">
                             Steinberger Grandhotel Belvédère
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group option-group">
-                    <div class="checkbox">
-
-                        <p class="form-label">Shuttle-Bus-Service</p>
-
-                        <label for="shuttle">
-                            <input id="shuttle" name="shuttle" value="1" type="checkbox">
-                            Wir möchten den Shuttle-Bus-Service beanspruchen
                         </label>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 <?php
 // Schritt 6
 $success = false;
+
 // Schritt 2
 $errors = [];
 
@@ -11,7 +12,6 @@ $phone   = $_POST['phone']   ?? '';
 $people  = $_POST['people']  ?? '';
 $hotel   = $_POST['hotel']   ?? '';
 $program = $_POST['program'] ?? '';
-$shuttle = $_POST['shuttle'] ?? '';
 $note    = $_POST['note']    ?? '';
 
 // Schritt 3
@@ -24,7 +24,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $people  = trim($people);
     $hotel   = trim($hotel);
     $program = trim($program);
-    $shuttle = trim($shuttle);
     $note    = trim($note);
     
     if($name === '') {
@@ -81,19 +80,21 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     
             <h1 class="form-title">Anmeldung für Kundenevent</h1>
 
-            <p>Füllen Sie das folgende Formular aus um sich für unseren Kundenevent 2016 anzumelden.</p>
+            <p>Füllen Sie das folgende Formular aus um sich für unseren Kundenevent im kommenden Frühlung anzumelden.</p>
 
             <!-- SCHRITT 2 -->
             <?php if(count($errors) > 0): ?>
-                <ul class="errors">
-                    <?php foreach($errors as $error): ?>
-                        <li><?= $error ?></li>
-                    <?php endforeach; ?>
-                </ul>
+                <div class="error-box">
+                    <ul class="errors">
+                        <?php foreach($errors as $error): ?>
+                            <li><?= $error ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
             <?php endif; ?>
             <!-- /SCHRITT 2 -->
 
-            <form action="index.php" method="post">
+            <form action="loesung.php" method="post">
 
                 <fieldset>
                     <legend class="form-legend">Kontaktdaten</legend>
@@ -142,22 +143,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <?= $hotel === 'Steinberger Grandhotel Belvédère' ? 'checked' : '' ?>
                                 >
                                 Steinberger Grandhotel Belvédère
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group option-group">
-                        <div class="checkbox">
-
-                            <p class="form-label">Shuttle-Bus-Service</p>
-
-                            <label for="shuttle">
-                                <input id="shuttle"
-                                    name="shuttle"
-                                    value="1"
-                                    type="checkbox"
-                                    <?= $shuttle == '1' ? 'checked' : '' ?>
-                                >
-                                Wir möchten den Shuttle-Bus-Service beanspruchen
                             </label>
                         </div>
                     </div>
