@@ -81,14 +81,12 @@ if(feld_yz_ungültig) {
 }
 // ...
 ```
+Regeln für die Validierung
 
-Alle Felder, ausser das für die Bemerkung, sind Pflichtfelder.
-
-Für die Validierung der Email-Adresse überprüfen wir nur, ob die Eingabe ein `@` enthält.
-
-Für die Telefonnummer dürfen nur Zahlen, Leerzeichen und das `+` Symbol eingegeben werden. Alle anderen Eingaben sind ungültig.
-
-Wenn keine Fehler vorhanden sind, gib einfach nur den String `OK` nach der Validierung der Daten aus.
+* Alle Felder, ausser das für die Bemerkung, sind Pflichtfelder.
+* Für die Validierung der Email-Adresse überprüfen wir nur, ob die Eingabe ein `@` enthält.
+* Für die Telefonnummer dürfen nur Zahlen, Leerzeichen und das `+` Symbol eingegeben werden. Alle anderen Eingaben sind ungültig.
+* Wenn keine Fehler vorhanden sind, gib einfach nur den String `OK` nach der Validierung der Daten aus.
 
 Die folgenden Testfälle sollte Dein Formular erfüllen. 
 
