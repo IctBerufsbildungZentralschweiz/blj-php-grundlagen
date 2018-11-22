@@ -6,11 +6,11 @@ Erstelle eine Website, auf der via Local File Inclusion deine MySQL-Zugangsdaten
 
 ## Lösungshilfe
 
-* Erstelle eine einfache Website, die über den GET-Parameter `content` dynamisch Inhalte anzeigt. Bsp: `index.php?content=home`, `index.php?content=contact`
+* Erstelle eine einfache Website, die über den GET-Parameter `content` dynamisch Inhalte anzeigt. Bsp: `index.php?content=home.txt`, `index.php?content=contact.txt`
 
 ```php
 <h2>Seite</h2>
-<?php include($_GET['content']); ?>
+<?php include("contents/" . $_GET['content']); ?>
 ```
 
 * Die Inhaltsdateien mit den Texten sollen in einem Ordner `contents` abgelegt werden. Es existiert also folgende Verzeichnisstruktur:
