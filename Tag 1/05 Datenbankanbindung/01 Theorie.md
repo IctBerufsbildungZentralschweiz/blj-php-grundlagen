@@ -8,14 +8,18 @@ Die von PHP zur Verfügung gestellte PDO-Klasse stellt ein einheitliches Interfa
 
 ```php
 $user = 'root';
-$pass = '';
-$dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass);
+$password = '';
+
+$pdo = new PDO('mysql:host=localhost;dbname=test', $user, $password, [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
+]);
 ```
 
 ## Select
 
 ```php
-$stmt = $dbh->query('SELECT * FROM `users`');
+$stmt = $pdo->query('SELECT * FROM `users`');
 foreach($stmt->fetchAll() as $x) {
     var_dump($x);
 }
@@ -24,21 +28,21 @@ foreach($stmt->fetchAll() as $x) {
 ## Insert
 
 ```php
-$count = $dbh->exec("INSERT INTO `tasks` (description) VALUES ('Geschirr abwaschen')");
+$count = $pdo->exec("INSERT INTO `tasks` (description) VALUES ('Geschirr abwaschen')");
 echo "$count Datensätze wurden eingefügt.";
 ```
 
 ## Update
 
 ```php
-$count = $dbh->exec("UPDATE `tasks` SET done = 1 WHERE id = 50");
+$count = $pdo->exec("UPDATE `tasks` SET done = 1 WHERE id = 50");
 echo "$count Datensätze wurden geändert.";
 ```
 
 ## Delete
 
 ```php
-$count = $dbh->exec("DELETE FROM `tasks` WHERE done = 1");
+$count = $pdo->exec("DELETE FROM `tasks` WHERE done = 1");
 echo "$count Datensätze wurden gelöscht.";
 ```
 
@@ -46,7 +50,7 @@ echo "$count Datensätze wurden gelöscht.";
 Um SQL-Injection zu verhindern, sollte ausschliesslich mit  [`Prepared-Statements`](https://de.wikipedia.org/wiki/Prepared_Statement) gearbeitet werden. 
 ### Select
 ```php
-$stmt = $dbh->prepare('SELECT * FROM `users` WHERE id = :id');
+$stmt = $pdo->prepare('SELECT * FROM `users` WHERE id = :id');
 $stmt->execute([':id' => 1]);
 
 foreach($stmt->fetchAll() as $x) {
@@ -55,6 +59,6 @@ foreach($stmt->fetchAll() as $x) {
 ```
 ### Insert
 ```php
-$stmt = $dbh->prepare("INSERT INTO `users` (first_name, last_name) VALUES(:first, :last) ");
+$stmt = $pdo->prepare("INSERT INTO `users` (first_name, last_name) VALUES(:first, :last) ");
 $stmt->execute([':first' => $firstname, ':last' => $lastname]);
 ```
