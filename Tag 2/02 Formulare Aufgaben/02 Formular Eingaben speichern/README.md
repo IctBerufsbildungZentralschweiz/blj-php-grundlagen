@@ -18,7 +18,7 @@ Programmiere an der Stelle, wo die Erfolgsmeldung _«Anmeldung erfolgreich»_ au
 
 Exisitiert die Datei noch nicht, muss sie erstellt werden. Existiert sie jedoch bereits, dann müssen die neu übermittelten Anmeldungsdaten jeweils am Ende der Datei angefügt werden **ohne bereits bestehende Anmeldungen zu überschreiben!** 
 
-Tipp: Schau dir in der PHP-Dokumentation die Funktionen [fopen](http://php.net/manual/de/function.fopen.php) und [fwrite](http://php.net/manual/de/function.fwrite.php) genauer an.
+Tipp: Schau dir in der PHP-Dokumentation die Funktionen [fopen](http://php.net/manual/de/function.fopen.php) und [fputcsv](https://www.php.net/manual/en/function.fputcsv.php) genauer an.
 
 #### Schritt 3
 
