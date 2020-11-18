@@ -43,7 +43,7 @@ Wenn keine Flaschen mehr vorhanden sind, soll der letzte Vers ausgegeben werden:
 > No more bottles of beer on the wall, no more bottles of beer. <br />
 > Go to the store and buy some more, 99 bottles of beer on the wall.
 
-#### Schritt 4
+#### Schritt 4 (Zusatzaufgabe)
 
 4. Nimm die Datei `beers_3.php` aus den Lösungen als Grundlage. Lagere die doppelt ausgeführte Abfrage (Zeilen 6 und 7) für die Singular-/Plural-Form des Wortes `bottle` in eine Funktion `getWord` aus.
 
