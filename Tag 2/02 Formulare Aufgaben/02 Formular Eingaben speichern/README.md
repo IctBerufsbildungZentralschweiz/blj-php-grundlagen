@@ -4,13 +4,13 @@ Nutze als Basis für diese Aufgabe deine Lösung zum Anmelde-Formular für den K
 
 ## Aufgabenstellung
 
-Erweitere dein PHP-Script, welches das Formular verarbeitet, sodass beim Absenden des Formulares nach erfolgreicher Validierung, d.h. wenn alle Eingaben OK sind, die vom Benutzer eingegeben Daten in eine Datei gespeichert werden.
+Erweitere dein PHP-Script, so dass beim Absenden des Formulares nach erfolgreicher Validierung, alle Daten in eine CSV-Datei abgespeichert werden.
 
 ### Lösungsschritte
 
 #### Schritt 1 
 
-Erstelle in deinem Root-Verzeichnis einen neuen Ordner `Daten`. In diesem Ordner werden wir später eine Datei anlegen, in die wir die über das Formular getätigten Anmeldungen speichern.
+Erstelle in deinem `jtdocs` Verzeichnis einen neuen Ordner `daten`. In diesem Ordner werden wir später eine Datei anlegen, in die wir die über das Formular getätigten Anmeldungen speichern.
 
 #### Schritt 2
 
@@ -22,7 +22,7 @@ Tipp: Schau dir in der PHP-Dokumentation die Funktionen [fopen](http://php.net/m
 
 #### Schritt 3
 
-Die Daten sollen gemäss dem **Csv-Format** strukturiert abgelegt werden. Die  Datei soll einen sprechenden Namen und die Dateiendung .csv haben, z.B. `anmeldungen.csv`.
+Die Daten sollen gemäss dem **CSV-Format** strukturiert abgelegt werden. Die  Datei soll einen sprechenden Namen und die Dateiendung .csv haben, z.B. `anmeldungen.csv`.
 
 > Das Dateiformat CSV steht für  **C**omma-**S**eparated **V**alues (seltener auch: Character-Separated Values) und beschreibt den Aufbau einer Textdatei zur Speicherung oder zum Austausch einfach strukturierter Daten. Die Dateinamenserweiterung lautet `.csv`. 
 
@@ -51,7 +51,7 @@ Lösche die Csv-Datei `Daten/anmeldungen.csv` bevor du mit den Testfällen begin
 
 * Name: ```Peter Muster```
 * Email: ```peter@muster.ch``` 
-* Telenfon: ```041 371 24 24```
+* Telefon: ```041 371 24 24```
 * Unterkunft (Anzahl Personen): ```2``` 
 * Hotel: ```Steinberberger Grandhotel``` 
 * Individuelles Programm: ```Billardturnier``` 
@@ -61,7 +61,7 @@ Schicke die Anmeldung ab, indem du den «Anmelden»-Button klickst.
 
 Überprüfe das Resultat:
 
- * Die Csv-Datei `Daten/anmeldunden.csv` wurde erstellt. 
+ * Die CSV-Datei `daten/anmeldunden.csv` wurde erstellt. 
  * Die Kopfzeile (Spaltennamen) in der Datei wurde korrekt erstellt. 
  * Die eingegebenen Daten aus dem Anmeldeformular wurden in der Datei auf der zweiten Zeile gespeichert.
  * Öffne die Csv-Datei mit Excel: alle Daten befinden sich in den richtigen Spalten. 
