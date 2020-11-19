@@ -10,7 +10,7 @@ Erweitere dein PHP-Script, so dass beim Absenden des Formulares nach erfolgreich
 
 #### Schritt 1 
 
-Erstelle in deinem `jtdocs` Verzeichnis einen neuen Ordner `daten`. In diesem Ordner werden wir später eine Datei anlegen, in die wir die über das Formular getätigten Anmeldungen speichern.
+Erstelle in deinem `htdocs` Verzeichnis einen neuen Ordner `daten`. In diesem Ordner werden wir später eine Datei anlegen, in die wir die über das Formular getätigten Anmeldungen speichern.
 
 #### Schritt 2
 
