@@ -6,7 +6,7 @@
 
 [Wikipedia](https://de.wikipedia.org/wiki/PHP)
 
-Aktuell ist PHP als Version 7 verfügbar.
+Aktuell ist PHP als Version 8 verfügbar.
 
 ## Wer nutzt PHP?
 
@@ -14,6 +14,7 @@ Einige der grössten Websites der Welt...
 
 * Facebook (HHVM)
 * Wikipedia (HHVM)
+* Slack
 * Flickr
 * Tumblr
 * Yahoo
