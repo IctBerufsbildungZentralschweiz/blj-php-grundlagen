@@ -6,7 +6,7 @@ Erstelle ein Script, welches Sätze aus einem Array durchläuft und sie bei ents
 
 ### Zielumgebung
 
-Die Scriptausgabe soll in der Kommandozeile erscheinen. Starte das Script also aus der Kommandozeile mit `php -f script.php`.
+Die Scriptausgabe soll im Browser erscheinen. Erstellen eine PHP-Datei und rufe sie im Web-Browser auf.
 
 ### Lösungsschritte
 
