@@ -9,7 +9,7 @@ Die von PHP zur Verfügung gestellte PDO-Klasse stellt ein einheitliches Interfa
 ```php
 $user = 'root';
 $password = '';
-$database = 'tasktlist';
+$database = 'tasklist';
 
 $pdo = new PDO('mysql:host=localhost;dbname=' . $database, $user, $password, [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
