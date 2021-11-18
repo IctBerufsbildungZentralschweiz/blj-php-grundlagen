@@ -8,7 +8,7 @@ Schreibe ein PHP-Script, welches den Songtext des Liedes «99 Bottles of Beer» 
 
 ### Zielumgebung
 
-Die Scriptausgabe soll in der Kommandozeile erscheinen. Starte das Script also aus der Kommandozeile mit `php -f script.php`.
+Die Scriptausgabe soll im Browser erscheinen. Erstellen eine PHP-Datei und rufe sie im Web-Browser auf.
 
 ### Lösungsschritte
 
