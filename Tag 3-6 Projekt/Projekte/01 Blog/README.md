@@ -27,7 +27,7 @@ Achte darauf, dass du zuerst die Anforderungen mit der höchsten Priorität erf�
 | A011 | Als Blogger will ich mich einloggen, um Blog-Beiträge zu schreiben, damit niemand in meinem Namen bloggen kann.                  |   3  |
 | A012 | Als Blogger will ich, das mein Passwort verschlüsselt in der Datenbank abgelegt wird.                                            |   3  |
 | A013 | Als Blogger will ich mein Passwort ändern können.                                                                                |   3  |
-| A014 | Als Benutzer will ich einen Blog-Beitrag kommentieren können.                                                                    |   3  |
+| A014 | Als Blogger will ich, dass Benutzer sich einloggen müssen, um einen Blog-Beitrag kommentieren zu können.                         |   3  |
 | A015 | Als Blogger will ich per E-Mail informiert werden, wenn eine meiner Beiträge bewertet/kommentiert wurde.                         |   3  |
 | A016 | Als Benutzer will ich mich registrieren können, um selber als Blogger Beiträge schreiben zu können.                              |   3  |
 
