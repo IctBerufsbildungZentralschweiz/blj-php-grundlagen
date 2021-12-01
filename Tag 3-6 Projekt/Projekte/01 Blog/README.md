@@ -12,24 +12,24 @@ Die Anforderungen an den Blog, d.h. welche Funktionen der Blog für den Benutzer
 
 Achte darauf, dass du zuerst die Anforderungen mit der höchsten Priorität erfüllst und erst am Schluss, wenn du noch Zeit hast, die tiefer priorisierten und damit nicht ganz so wichtigen Funktionen ausprogrammierst. 
 
-| Nr   | Beschreibung                                                                                                                     | Prio |
-|------|----------------------------------------------------------------------------------------------------------------------------------|------|
-| A001 | Als Benutzer will ich Blog-Beiträge lesen können.                                                                                |   1  |
-| A002 | Als Blogger will ich Blog-Beiträge schreiben können.                                                                             |   1  |
-| A003 | Zu jedem Blog-Beitrag sollen der Name des Bloggers sowie Erstelldatum/-zeit angezeigt werden.                                    |   1  |
-| A004 | Als Benutzer will ich eine Liste mit Links zu den Blogs meiner BLJ-Kollegen sehen.                                               |   1  |
-| A005 | Als Blogger will ich Bilder aus dem Internet verlinken können, um meine Beiträge interessanter zu machen.                        |   1  |
-| A006 | Als Benutzer will ich einen Blog-Beitrag bewerten können.                                                                        |   2  |
-| A007 | Als BLJ-Coach will ich, dass die Link-Liste aller BLJ-Blogs (siehe A004) zentral abgelegt und dynamisch erstellt wird.           |   2  |
-| A008 | Als Benutzer will ich auf einen Blog-Beitrag antworten können (Kommentarfunktion).                                               |   2  |
-| A009 | Als Blog-Entwickler will ich, dass andere Entwickler alle Beiträge meines Blogs über eine JSON-Schnittstelle abrufen können.     |   3  |
-| A010 | Als Benutzer will ich auch die Blog-Beiträge aller anderen BLJ-Blogs sehen. Diese werden über die JSON-Schnittstelle abgeholt.   |   3  |
-| A011 | Als Blogger will ich mich einloggen, um Blog-Beiträge zu schreiben, damit niemand in meinem Namen bloggen kann.                  |   3  |
-| A012 | Als Blogger will ich, das mein Passwort verschlüsselt in der Datenbank abgelegt wird.                                            |   3  |
-| A013 | Als Blogger will ich mein Passwort ändern können.                                                                                |   3  |
-| A014 | Als Blogger will ich, dass Benutzer eine gültige E-Mail Adresse angeben müssen, um einen Blog-Beitrag kommentieren zu können.    |   3  |
-| A015 | Als Blogger will ich per E-Mail informiert werden, wenn eine meiner Beiträge bewertet/kommentiert wurde.                         |   3  |
-| A016 | Als Benutzer will ich mich registrieren können, um selber als Blogger Beiträge schreiben zu können.                              |   3  |
+| Nr   | Beschreibung                                                                                                                                                        | Prio |
+|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
+| A001 | Als Benutzer will ich Blog-Beiträge lesen können.                                                                                                                   |   1  |
+| A002 | Als Blogger will ich Blog-Beiträge schreiben können.                                                                                                                |   1  |
+| A003 | Zu jedem Blog-Beitrag sollen der Name des Bloggers sowie Erstelldatum/-zeit angezeigt werden.                                                                       |   1  |
+| A004 | Als Benutzer will ich eine Liste mit Links zu den Blogs meiner BLJ-Kollegen sehen.                                                                                  |   1  |
+| A005 | Als Blogger will ich Bilder aus dem Internet verlinken können, um meine Beiträge interessanter zu machen.                                                           |   1  |
+| A006 | Als Benutzer will ich einen Blog-Beitrag bewerten können.                                                                                                           |   2  |
+| A007 | Als BLJ-Coach will ich, dass die Link-Liste aller BLJ-Blogs (siehe A004) zentral abgelegt und dynamisch erstellt wird.                                              |   2  |
+| A008 | Als Benutzer will ich auf einen Blog-Beitrag antworten können (Kommentarfunktion).                                                                                  |   2  |
+| A009 | Als Blog-Entwickler will ich, dass andere Entwickler alle Beiträge meines Blogs über eine JSON-Schnittstelle abrufen können.                                        |   3  |
+| A010 | Als Benutzer will ich auch die Blog-Beiträge aller anderen BLJ-Blogs sehen. Diese werden über die JSON-Schnittstelle abgeholt.                                      |   3  |
+| A011 | Als Blogger will ich mich einloggen, um Blog-Beiträge zu schreiben, damit niemand in meinem Namen bloggen kann.                                                     |   3  |
+| A012 | Als Blogger will ich, das mein Passwort verschlüsselt in der Datenbank abgelegt wird.                                                                               |   3  |
+| A013 | Als Blogger will ich mein Passwort ändern können.                                                                                                                   |   3  |
+| A014 | Als Blogger will ich, dass der Kommentar eines Benutzers erst dann freigeschaltet wird, wenn der Benutzer seine E-Mail Adresse verifiziert hat (Aktivierungs-Link). |   3  |
+| A015 | Als Blogger will ich per E-Mail informiert werden, wenn eine meiner Beiträge bewertet/kommentiert wurde.                                                            |   3  |
+| A016 | Als Benutzer will ich mich registrieren können, um selber als Blogger Beiträge schreiben zu können.                                                                 |   3  |
 
 ## Zusätzliche Anforderungen
 
