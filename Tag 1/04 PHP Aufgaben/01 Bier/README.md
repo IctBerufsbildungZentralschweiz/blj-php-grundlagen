@@ -45,7 +45,7 @@ Wenn keine Flaschen mehr vorhanden sind, soll der letzte Vers ausgegeben werden:
 
 #### Schritt 4 (Zusatzaufgabe)
 
-4. Nimm die Datei `beers_3.php` aus den Lösungen als Grundlage. Lagere die doppelt ausgeführte Abfrage (Zeilen 6 und 7) für die Singular-/Plural-Form des Wortes `bottle` in eine Funktion `getWord` aus.
+4. Analysiere dein Code. Gibt es irgendwo Redundanzen (doppelte Logik im Code), welche du in eigene Funktionen auslagern kannst? Ist der Code gut formatiert? Sind die Variablennamen gut gewählt. Suche eine andere Person aus der Klasse und reviewed euren Code gegenseitig. Was könnte man noch verbessern?
 
 ## Lösung
 
