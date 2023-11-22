@@ -16,7 +16,7 @@ Entwickle das Script immer nur so weit, bis alle Komponenten des jeweiligen Schr
 
 #### Schritt 1
 
-Erstelle eine einfache HTML-Seite ohne PHP-Code, die folgende Liste bekannter Clowns enthält.
+Erstelle eine PHP-Datei aber noch ohne PHP-Code, die nur folgende Liste bekannter Clowns als HTML-Liste enthält.
 
 * Eugen Rosai
 * Alfredo Smaldini
