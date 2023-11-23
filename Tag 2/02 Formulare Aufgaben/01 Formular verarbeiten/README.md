@@ -1,14 +1,15 @@
 # Formular verarbeiten und validieren
 
 Nutze als Basis für diese Aufgabe as Anmelde-Formular für einen Firmenevent im Ordner `src`. 
-Stelle sicher, dass dein Projekt folgende Struktur hat:
+
+Stelle sicher, dass dein Projek folgende Struktur hat:
 
 ```php
-formular/
- | css/
- | css/styles.css      # Dateiname nicht relevant
- | index.php           # In dieser Datei sollte dein Formular sein
+htdocs/formular/
+ | index.php  # In dieser Datei sollte dein Formular sein
 ```
+
+Du erreichst das Formular im Browser dann unter [http://localhost/formular](http://ocalhost/formular).
 
 ## Aufgabenstellung
 
