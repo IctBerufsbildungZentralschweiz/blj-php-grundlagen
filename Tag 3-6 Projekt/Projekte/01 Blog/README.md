@@ -66,11 +66,11 @@ Die Blog-Beiträge sollen in einer Datenbank abgelegt werden. Dazu erstellst du 
 
 - **posts** mit Primärschlüssel **id** und den Feldern   **created_by**, **created_at**, **post_title**, **post_text**
 
-Sobald du die Anforderungen der 3.Prioriät implementieren willst, wirst du die Datenbank erweitern müssen, um Benutzername und Passwort des Bloggers ablegen zu können. Eine weitere Tabelle wird nötig, z.B.
+Sobald du die Anforderung "A009" implementieren willst, wirst du die Datenbank erweitern müssen, damit Benutzername und Passwort des Bloggers gespeichert werden können. Eine weitere Tabelle wird nötig, z.B.
 
 - **users** mit Primärschlüssel **id** und den Feldern **first_name**, **last_name**, **email**, **user_name**, **user_password**
 
-Damit bei einem Blog-Beitrag der Vor- und der Nachname des Bloggers (die neu in der Tabelle **users** gespeichert werden), angezeigt werden kann, muss in der **posts**-Tabelle ein Fremdschlüssel **user_id** erstellt werden, der die Tabelle **users** referenziert. Das Feld **created_by** wird überflüssig
+Erstelle in der **posts**-Tabelle einen Fremdschlüssel **user_id** , der die Tabelle **users** referenziert, damit datenbanktechnisch sichergestellt ist, dass nur registrierte Benutzer bloggen können.
 
 ## JSON-Schnittstelle
 
@@ -96,7 +96,7 @@ Beispiel:
 }
 ```
 
- JSON wird insbesondere bei Webapplikationen häufig zum Transfer von Daten zwischen dem Client und dem Server genutzt; denn ein Browser und ein Webserver können "nur" Text austauschen. Aber auch zwischen zwei Webservern wird mit JSON ein Austausch von Daten über das Internet möglich. Um  z.B. Daten, die in einem PHP-Array gespeichert sind an ein PHP-Skript zu schicken, das auf einem anderen Server läuft, muss das Array in einen JSON-codierten String umgewandelt werden (dieser Vorgang nennt sich "Serialisieren"). Dieser JSON-codierte String kann dann über Internet verschickt, respektive angefordert werden. Auf der Empfängerseite wird der JSON-codierte Strings schliesslich zurück in ein Array umgewandelt ("Deserialiseren").
+JSON wird insbesondere bei Webapplikationen häufig zum Transfer von Daten zwischen dem Client und dem Server genutzt; denn ein Browser und ein Webserver können "nur" Text austauschen. Aber auch zwischen zwei Webservern wird mit JSON ein Austausch von Daten über das Internet möglich. Um  z.B. Daten, die in einem PHP-Array gespeichert sind an ein PHP-Skript zu schicken, das auf einem anderen Server läuft, muss das Array in einen JSON-codierten String umgewandelt werden (dieser Vorgang nennt sich "Serialisieren"). Dieser JSON-codierte String kann dann über Internet verschickt, respektive angefordert werden. Auf der Empfängerseite wird der JSON-codierte Strings schliesslich zurück in ein Array umgewandelt ("Deserialiseren").
 
  ![Szene 1](res/01.jpg)
 
@@ -109,6 +109,6 @@ json_encode($myArray)
 ### Mit PHP Daten über eine JSON-Schnittstelle abholen
 
 ```php
-$jsonString = file_get_contents('http://192.168.51.10/api/blog/get_posts.php');
+$jsonString = file_get_contents('http://192.168.51.10/blog/api/');
 json_decode($jsonString)
 ```
