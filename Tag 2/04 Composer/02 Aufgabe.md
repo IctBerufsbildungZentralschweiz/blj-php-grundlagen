@@ -34,12 +34,12 @@ Jetzt hast du die Möglichkeit die vielen Validator-Funktionen für dein Formula
 
 ```php
 // Ist der Name mindestens 1 Zeichen lang?
-if( ! v::length(1)->validate($data['name']) {
+if( ! v::length(1)->validate($data['name'])) {
     echo "Bitte gib einen Namen ein!";
 }
 
 // Wurde eine Email-Adresse eingegeben?
-if( ! v::email()->validate($data['email']) {
+if( ! v::email()->validate($data['email'])) {
     echo "Bitte gib eine gültige Email ein!";
 }
 ```
