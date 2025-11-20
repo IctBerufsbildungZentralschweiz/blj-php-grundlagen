@@ -61,7 +61,7 @@
 
         <p>Füllen Sie das Formular aus um sich für unseren Kundenevent im kommenden Frühling anzumelden.</p>
 
-        <form action="index.php" method="post">
+        <form action="" method="post">
 
             <fieldset>
                 <legend class="form-legend">Kontaktdaten</legend>
