@@ -4,7 +4,7 @@
 
 ## Aufgabenstellung
 
-Schreibe ein PHP-Script, welches den Songtext des Liedes «99 Bottles of Beer» ausgibt: http://www.99-bottles-of-beer.net/lyrics.html
+Schreibe ein PHP-Script, welches den Songtext des Liedes «99 Bottles of Beer» ausgibt: [http://www.99-bottles-of-beer.net/lyrics.html](https://web.archive.org/web/20260327213234/https://www.99-bottles-of-beer.net/lyrics.html)
 
 ### Zielumgebung
 
