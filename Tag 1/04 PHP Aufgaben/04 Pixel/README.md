@@ -48,10 +48,10 @@ Beide Parameter sollen optional sein und einen Standard-Wert von 4 haben.
 
 |                      URL                       | Spalten | Zeilen |
 |------------------------------------------------|---------|--------|
-| http://localhost/pixel/index.php               |       4 |      4 |
-| http://localhost/pixel/index.php?rows=2        |       4 |      2 |
-| http://localhost/pixel/index.php?cols=2        |       2 |      4 |
-| http://localhost/pixel/index.php?cols=2&rows=2 |       2 |      2 |
+| http://localhost/pixel.php               |       4 |      4 |
+| http://localhost/pixel.php?rows=2        |       4 |      2 |
+| http://localhost/pixel.php?cols=2        |       2 |      4 |
+| http://localhost/pixel.php?cols=2&rows=2 |       2 |      2 |
 
 Du kannst über die Superglobale `$_GET` auf Parameter aus der URL zugreifen.
 
@@ -95,7 +95,7 @@ Die Pixel-Koordinaten werden als String im Format `x|y` definiert. Möchten wir 
 Da wir mehrere Koordinaten an das PHP-Script übergeben möchten, können wir den GET-Parameter `pixels` als Array übergeben. Dies geschieht, indem `[]` an den Parametername angehängt wird.
 
 ```
-http://localhost/pixels/index.php?pixels[]=1|2&pixels[]=2|1
+http://localhost/pixels.php?pixels[]=1|2&pixels[]=2|1
 ```
 
 Erweitere das PHP-Script so, dass über folgende Query-Strings die korrekten Pixel markiert werden:
